@@ -88,7 +88,7 @@ createdTime: "2021-08-20T01:15:04.000Z"
 | Component CSS 1           |    H     |     4hrs      |     hrs      |    hrs     |
 | Total                     |    H     |    40hrs     |     hrs     |    hrs    |
 
-
+## SWOT
 
 ### Strengths: I feel confident in my ability to create this API and implement its cool unique features.
 
