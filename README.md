@@ -1,13 +1,13 @@
-#Overwatch API
+# Overwatch API
 
-##Project Description
+## Project Description
 Overwatch API displaying all heroes and abilities including images.
 
-#Wireframes
+# Wireframes
 
 https://whimsical.com/overwatch-api-2579rr4xBPyVkK5mSJLkQX
 
-#Component Hierarchy
+# Component Hierarchy
 
 https://whimsical.com/heirachy-MbiDWmUE4CCU1gEQhRiSqu
 
@@ -63,7 +63,7 @@ createdTime: "2021-08-20T01:14:43.000Z"
 | Oct 13   | Cont'd React/ MVP          | Complete |
 | Oct 14   | CSS/ Post MVP                | Complete |
 | Oct 15   | Post MVP/ CSS cont'd     | Complete |
-| Oct 16   | Presentations                  | Complete |
+|   | Presentations                  | Complete |
 
 #Project Schedule
 Day	Deliverable	Status
