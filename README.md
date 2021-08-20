@@ -5,11 +5,11 @@ Overwatch API displaying all heroes and abilities including images.
 
 #Wireframes
 
-![Whimsical Component Hierarchy](https://whimsical.com/da84beb8-d58a-418d-becc-2e56ab508484)
+https://whimsical.com/overwatch-api-2579rr4xBPyVkK5mSJLkQX
 
 #Component Hierarchy
 
-![Whimsical Component Hierarchy](https://whimsical.com/b73c2f10-221d-47f5-a300-e3f29ead0256)
+https://whimsical.com/heirachy-MbiDWmUE4CCU1gEQhRiSqu
 
 #API and Data Sample
 
