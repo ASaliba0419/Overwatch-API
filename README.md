@@ -86,17 +86,10 @@ August 27	Presentations	Incomplete
 | Data population pg 2      |    H     |      4hrs      |     hrs      |    hrs     |
 | Functioning Create/Delete     |    H     |      4hrs      |     hrs      |    hrs     |
 | Form creation pg 1        |    H     |      3hrs      |     hrs      |    hrs     |
-| Form creation pg 2        |    H     |      3hrs      |      hr      |     hr     |
-| Form creation pg 3        |    H     |      3hrs      |      hr      |     hr     |
 | Data creation/update pg 1 |    H     |      4hrs      |     hrs      |    hrs     |
-| Data creation/update pg 2 |    H     |      4hrs      |      hr      |     hr     |
-| Data creation/update pg 3 |    H     |      4hrs      |      hr      |     hr     |
 | Data deletion pg 1        |    H     |      3hrs      |      hr      |     hr     |
-| Data deletion pg 2        |    H     |      3hrs      |      hr      |     hr     |
-| Data deletion pg 3        |    H     |      3hrs      |      hr      |     hr     |
-| Component CSS pg 1        |    H     |     4hrs      |     hrs      |    hrs     |
-| Component CSS pg 2        |    H     |      4hrs      |     hrs      |    hrs     |
-| Component CSS pg 3        |    H     |      4hrs      |     hrs      |    hrs     |
+| Component CSS             |    H     |     4hrs      |     hrs      |    hrs     |
+| Component CSS 1           |    H     |     4hrs      |     hrs      |    hrs     |
 | Total                     |    H     |    58hrs     |     hrs     |    hrs    |
 
 
