@@ -75,17 +75,18 @@ createdTime: "2021-08-20T01:15:04.000Z"
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Airtable setup            |    H     |     1hrs      |      1hr      |     1hr     |
-| Clickable icons           |    H     |      1hrs      |      hr      |     hr     |
+| Airtable setup            |    H     |     1hrs      |      2hr      |     2hr     |
+| Clickable icons           |    H     |      2hrs      |      hrs      |     hrs     |
+| Clickable links           |    H     |      3hrs      |      hrs      |     hrs     |
 | Data population pg 1      |    H     |      4hrs      |     hrs      |    hrs     |
 | Data population pg 2      |    H     |      4hrs      |     hrs      |    hrs     |
 | Functioning Create/Delete     |    H     |      4hrs      |     hrs      |    hrs     |
-| Form creation pg 1        |    H     |      3hrs      |     hrs      |    hrs     |
+| Form creation        |    H     |      4hrs      |     hrs      |    hrs     |
 | Data creation/update pg 1 |    H     |      4hrs      |     hrs      |    hrs     |
-| Data deletion pg 1        |    H     |      3hrs      |      hr      |     hr     |
+| Data deletion         |    H     |      4hrs      |      hr      |     hr     |
 | Component CSS             |    H     |     4hrs      |     hrs      |    hrs     |
 | Component CSS 1           |    H     |     4hrs      |     hrs      |    hrs     |
-| Total                     |    H     |    58hrs     |     hrs     |    hrs    |
+| Total                     |    H     |    40hrs     |     hrs     |    hrs    |
 
 
 
