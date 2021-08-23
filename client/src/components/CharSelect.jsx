@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { Route, Link } from 'react-router-dom'
 
 const CharSelect = (props) => {
@@ -16,12 +15,13 @@ const CharSelect = (props) => {
         <Link className="charCreate1" to="/CharCreate">Create Character</Link>
       </div>
 
+    
       <div>
         {props.characters.map((character) => (
-          <img src={character.fields.Images} alt={character.fields.name}/>
-        ))}
-
-
+          <Link to={`/${character.id}`}>
+          <img src={character.fields.Images} alt={character.fields.name} />
+          </Link>
+          ))}
       </div>
     </>
   )
