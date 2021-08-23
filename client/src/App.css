@@ -1,3 +1,47 @@
+/* --------------------------------------------------------------------------------------------- */
+
 .center {
   text-align: center;
 }
+
+
+.title {
+  text-align: center;
+  position: relative;
+  top: 6vh;
+  
+}
+
+.charSelect {
+  position: relative;
+  left: 35vw;
+  top: 15vh;
+}
+
+.charCreate {
+  position: relative;
+  left: 50vw;
+  top: 15vh;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.CharSelect1 {
+  text-align: center;
+  position: relative;
+  top: 6vh;
+}
+
+.charCreate1 {
+  position: relative;
+  left: 15vw;
+  bottom: 6vh;
+}
+
+.home {
+ position: relative;
+ left: 80vw;
+ bottom: 6vh;
+}
+
+/* --------------------------------------------------------------------------------------------- */

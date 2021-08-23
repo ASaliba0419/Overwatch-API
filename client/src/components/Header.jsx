@@ -4,7 +4,7 @@ import logo from '../components/img/logo.png'
 const Header = () => {
   return (
     <header className='center'>
-      <img src={logo} alt='Overwatch' />
+      <img src={logo} alt='Overwatch' height="200px"/>
     </header>
   )
 }
