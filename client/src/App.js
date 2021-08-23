@@ -1,12 +1,12 @@
 import './App.css';
-import Header from './components/Header'
 import axios from 'axios'
-import { Route, Link } from 'react-router-dom';
+import Header from './components/Header'
 import CharSelect from './components/CharSelect'
+import ViewChar from './components/ViewChar'
+import CharCreate from './components/CharCreate'
+import { Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { baseURL, config } from './services'
-import CharCreate from './components/CharCreate'
-import ViewChar from './components/ViewChar'
 
 
 
@@ -45,7 +45,7 @@ function App() {
 
 
           <h2 className="title">Get a view of all the characters, or create your own!</h2>
-          <Link className="charSelect" to='/CharSelect'>Character Selection</Link>
+          <Link className="charSelect" to='/CharSelect'>All Characters</Link>
           <Link className="charCreate" to="/CharCreate">Create Character</Link>
 
         </Route>
@@ -55,10 +55,10 @@ function App() {
         </Route>
 
         <Route path="/CharCreate">
-          <CharCreate />
+          <CharCreate characters={characters} setToggleFetch={setToggleFetch}/>
         </Route>
 
-        <Route path='/:id'>
+        <Route path='/ViewChar/:id'>
           <ViewChar characters={characters}/>
         </Route>
       </div>

@@ -1,9 +1,6 @@
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const CharSelect = (props) => {
-
-  
-
 
 
 
@@ -18,8 +15,8 @@ const CharSelect = (props) => {
     
       <div>
         {props.characters.map((character) => (
-          <Link to={`/${character.id}`}>
-          <img src={character.fields.Images} alt={character.fields.name} />
+          <Link to={`ViewChar/${character.id}`}>
+            <img src={character.fields.Images} alt={character.fields.name} />
           </Link>
           ))}
       </div>

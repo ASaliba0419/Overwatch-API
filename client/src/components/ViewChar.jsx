@@ -8,6 +8,7 @@ const ViewChar = (props) => {
   const [Difficulty, setDifficulty] = useState('')
   const [Abilities, setAbilities] = useState('')
   const [Role, setRole] = useState('')
+  const [Images, setImages] = useState('')
 
   const params = useParams()
 
@@ -20,13 +21,14 @@ const ViewChar = (props) => {
         setRole(thisChar.fields.Role)
         setDifficulty(thisChar.fields.Difficulty)
         setAbilities(thisChar.fields.Abilities)
+        setImages(thisChar.fields.Images)
       }
     }
   }, [params.id, props.characters])
 
   return (
     <>
-    <div>
+      <div>
       <Link className="home" to="/">Home</Link>
       <Link className="charSelect1" to='/CharSelect'>Character Selection</Link>
       </div>
@@ -38,9 +40,11 @@ const ViewChar = (props) => {
         <h4>{Role}</h4>
         <h3>Difficulty</h3>
         <h4>{Difficulty}</h4>
-        
+
         <h3>Abilities</h3>
-      <h4>{Abilities}</h4>
+        <h4>{Abilities}</h4>
+        
+        <img src={Images} alt={Name} />
       </div>
       </>
   )
