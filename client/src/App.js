@@ -7,6 +7,7 @@ import CharCreate from './components/CharCreate'
 import { Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { baseURL, config } from './services'
+import Footer from './components/Footer'
 
 
 
@@ -62,6 +63,9 @@ function App() {
           <ViewChar characters={characters} setToggleFetch={setToggleFetch}/>
         </Route>
       </div>
+
+      <Footer />
+
     </>
   );
 }
