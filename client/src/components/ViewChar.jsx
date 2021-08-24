@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 const ViewChar = (props) => {
 
@@ -8,7 +9,7 @@ const ViewChar = (props) => {
   const [Difficulty, setDifficulty] = useState('')
   const [Abilities, setAbilities] = useState('')
   const [Role, setRole] = useState('')
-  const [Images, setImages] = useState('')
+  const [Img, setImg] = useState('')
 
   const params = useParams()
 
@@ -21,10 +22,15 @@ const ViewChar = (props) => {
         setRole(thisChar.fields.Role)
         setDifficulty(thisChar.fields.Difficulty)
         setAbilities(thisChar.fields.Abilities)
-        setImages(thisChar.fields.Images)
+        setImg(thisChar.fields.Img)
       }
     }
   }, [params.id, props.characters])
+
+  const deleteChar = async () => {
+    await axios.delete(`https://api.airtable.com/v0/${process.env.REACT_APP_OVERWATCH_BASE}/characters/${props.character}`)
+    props.setToggleFetch((prevState) => !prevState)
+  }
 
   return (
     <>
@@ -44,9 +50,14 @@ const ViewChar = (props) => {
         <h3>Abilities</h3>
         <h4>{Abilities}</h4>
         
-        <img src={Images} alt={Name} />
+        <img src={Img} alt={Name} />
       </div>
-      </>
+
+      <div>
+      <button onClick={deleteChar}>Delete me!</button>
+      </div>
+    </>
+    
   )
 }
 

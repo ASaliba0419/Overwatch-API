@@ -1,0 +1,24 @@
+
+
+h1 {
+  color: red;
+  font-family: Arial;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+}
+
+.card {
+  padding: 0 2px;
+  transition: 250ms all;
+}
+
+.card:hover {
+  margin: 0 40px;
+  transform: scale(1.2)
+}
