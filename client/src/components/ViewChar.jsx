@@ -1,36 +1,38 @@
-import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import { baseURL, config } from '../services'
 
 const ViewChar = (props) => {
 
-  const [Name, setName] = useState('')
-  const [Difficulty, setDifficulty] = useState('')
-  const [Abilities, setAbilities] = useState('')
-  const [Role, setRole] = useState('')
-  const [Img, setImg] = useState('')
 
   const params = useParams()
+  const history = useHistory()
 
-  useEffect(() => {
-    if (params.id && props.characters.length > 0) {
-      const thisChar = props.characters.find(character => params.id === character.id)
-      console.log(thisChar)
-      if (thisChar) {
-        setName(thisChar.fields.Name)
-        setRole(thisChar.fields.Role)
-        setDifficulty(thisChar.fields.Difficulty)
-        setAbilities(thisChar.fields.Abilities)
-        setImg(thisChar.fields.Img)
-      }
-    }
-  }, [params.id, props.characters])
+
+  const thisChar = props.characters.find(character => params.id === character.id)
+  if (!thisChar) {
+    return (
+      <>
+      <div>
+      <Link className="home" to="/">Home</Link>
+      <Link className="charSelect1" to='/CharSelect'>Character Selection</Link>
+      </div>
+        <p>Invalid ID</p>
+      </>
+    )
+  }
+
+  const {Name, Role, Difficulty, Abilities, Img} = thisChar.fields
+      console.log(thisChar.fields)
+
 
   const deleteChar = async () => {
-    await axios.delete(`https://api.airtable.com/v0/${process.env.REACT_APP_OVERWATCH_BASE}/characters/${props.character}`)
+    await axios.delete(`${baseURL}/${params.id}`, config)
     props.setToggleFetch((prevState) => !prevState)
+    history.push('/CharSelect')
   }
+
 
   return (
     <>
@@ -53,9 +55,15 @@ const ViewChar = (props) => {
         <img src={Img} alt={Name} />
       </div>
 
+      
       <div>
-      <button onClick={deleteChar}>Delete me!</button>
+        {
+          (thisChar.fields.Deletable === "false") ? null : 
+          <button onClick={deleteChar}>Delete me!</button>
+
+        }
       </div>
+
     </>
     
   )

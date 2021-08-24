@@ -51,7 +51,7 @@ function App() {
         </Route>
 
         <Route path="/CharSelect">
-          <CharSelect characters={characters} />
+          <CharSelect characters={characters}/>
         </Route>
 
         <Route path="/CharCreate">
@@ -59,7 +59,7 @@ function App() {
         </Route>
 
         <Route path='/ViewChar/:id'>
-          <ViewChar characters={characters}/>
+          <ViewChar characters={characters} setToggleFetch={setToggleFetch}/>
         </Route>
       </div>
     </>
