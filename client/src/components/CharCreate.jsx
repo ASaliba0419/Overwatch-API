@@ -1,5 +1,5 @@
 import axios from "axios"
-import { Link, useParams } from "react-router-dom"
+import { Link, useHistory, useParams } from "react-router-dom"
 import { useState } from "react"
 import { baseURL, config } from '../services'
 import './CharCreate.css'
@@ -14,7 +14,7 @@ const CharCreate = (props) => {
   const [Img, setImg] = useState('')
 
   const params = useParams()
-
+  const history = useHistory()
 
 
   const handleSubmit = async (event) => {
@@ -27,13 +27,14 @@ const CharCreate = (props) => {
       Img
     }
 
-
     if (params.id) {
       await axios.put(`${baseURL}/${params.id}`, { fields: newChar }, config)
     } else {
       await axios.post(baseURL, { fields: newChar }, config)
     }
     props.setToggleFetch(prevToggleFetch => !prevToggleFetch)
+    history.push('/CharSelect/')
+
   }
 
   return (
@@ -55,7 +56,7 @@ const CharCreate = (props) => {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        
+
         <div>
           <select id="role" onChange={(e) => setRole(e.target.value)}>
             <option value="" disabled selected hidden>Choose a role</option>

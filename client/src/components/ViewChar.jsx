@@ -24,7 +24,7 @@ const ViewChar = (props) => {
   }
 
   const {Name, Role, Difficulty, Abilities, Img} = thisChar.fields
-      console.log(thisChar.fields)
+
 
 
   const deleteChar = async () => {

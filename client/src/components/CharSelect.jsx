@@ -17,7 +17,7 @@ const CharSelect = (props) => {
     
       <div className="cards">
         {props.characters.map((character) => (
-          <Link to={`ViewChar/${character.id}`}>
+          <Link to={`/ViewChar/${character.id}`}>
             <img className='card' src={character.fields.Img} alt={character.fields.name} />
           </Link>
           ))}
