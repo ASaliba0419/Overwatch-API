@@ -46,9 +46,12 @@ function App() {
           </div>
 
 
-          <h2 className="title">Get a view of all the characters, or create your own!</h2>
-          <div className='navHomepage'>
+          <div className="title">
+          <h2 >Get a view of all the characters, or <br /> create your own!</h2>
+          </div>
+
           <div className='nav'>
+          <div className='navHomepage'>
           <Link  to='/CharSelect'>All Characters</Link>
             <Link to="/CharCreate">Create Character</Link>
             </div>
