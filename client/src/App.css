@@ -1,9 +1,5 @@
 /* --------------------------------------------------------------------------------------------- */
 
-.center {
-  text-align: center;
-}
-
 
 .title {
   display: flex;
@@ -21,12 +17,3 @@
 }
 
 /* --------------------------------------------------------------------------------------------- */
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}

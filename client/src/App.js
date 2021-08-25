@@ -34,7 +34,7 @@ function App() {
     <>
 
 
-      <div className='headerContainer'>
+      <div>
         <Header />
       </div>
 
@@ -69,7 +69,7 @@ function App() {
           <ViewChar characters={characters} setToggleFetch={setToggleFetch} />
         </Route>
 
-      <div className='footer'>
+      <div>
         <Footer />
       </div>
     </>
