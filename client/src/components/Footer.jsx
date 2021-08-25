@@ -5,9 +5,12 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <h4>Andrew Saliba</h4>
-      <h4>This is a school project.</h4>
-      <h5>I do not own these characters nor the name Overwatch. All characters and the name Overwatch belong to Blizzard.</h5>
+      {/* <h4>Andrew Saliba
+        <br />
+        This is a school project.
+        <br />
+        I do not own these characters nor the name Overwatch.
+        All characters and the name Overwatch belong to Blizzard.</h4> */}
     </div>
   )
 }

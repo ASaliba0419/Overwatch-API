@@ -8,6 +8,7 @@ import { Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { baseURL, config } from './services'
 import Footer from './components/Footer'
+import './components/Header.css'
 
 
 
@@ -33,7 +34,7 @@ function App() {
     <>
 
 
-      <div className='center'>
+      <div className='headerContainer'>
         <Header />
       </div>
 
@@ -46,26 +47,31 @@ function App() {
 
 
           <h2 className="title">Get a view of all the characters, or create your own!</h2>
-          <Link className="charSelect" to='/CharSelect'>All Characters</Link>
-          <Link className="charCreate" to="/CharCreate">Create Character</Link>
+          <div className='navHomepage'>
+          <div className='nav'>
+          <Link  to='/CharSelect'>All Characters</Link>
+            <Link to="/CharCreate">Create Character</Link>
+            </div>
+            </div>
 
         </Route>
 
         <Route path="/CharSelect">
-          <CharSelect characters={characters}/>
+          <CharSelect characters={characters} />
         </Route>
 
         <Route path="/CharCreate">
-          <CharCreate characters={characters} setToggleFetch={setToggleFetch}/>
+          <CharCreate characters={characters} setToggleFetch={setToggleFetch} />
         </Route>
 
         <Route path='/ViewChar/:id'>
-          <ViewChar characters={characters} setToggleFetch={setToggleFetch}/>
+          <ViewChar characters={characters} setToggleFetch={setToggleFetch} />
         </Route>
       </div>
 
-      <Footer />
-
+      <div className='footer'>
+        <Footer />
+      </div>
     </>
   );
 }

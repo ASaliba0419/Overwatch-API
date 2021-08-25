@@ -1,0 +1,123 @@
+.homeViewChar {
+  display: flex;
+  position: absolute;
+  left: 81vw;
+  top: 23vh;
+}
+
+.charSelectViewChar {
+  display: flex;
+  position: absolute;
+  left: 16.5vw;
+  top: 23vh;
+}
+
+
+.characterContainer {
+  display: flex;
+  padding-left: 30vw;
+  border: 5px solid black;
+
+  
+}
+
+.characterItems {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 5px solid black;
+  width: 50%;
+  height: auto;
+}
+
+
+
+/* -------------------------------------------------Name------------------------------------------------------------- */
+.nameC {
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.name {
+  border: 2px solid red;
+}
+/* ----------------------------------------------Image------------------------------------------------------------- */
+.imageC {
+  border: 2px solid black;
+  width: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  border: 2px solid black;
+  height: 400px;
+  width: auto;
+}
+/* ------------------------------------------------Role------------------------------------------------------------ */
+
+.roleC {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roleTitle{
+  
+  border: 2px solid green;
+}
+
+.role {
+
+  border: 2px solid lightgreen;
+}
+.roleNameC {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.diffTitle {
+  border: 2px solid green;
+
+}
+
+.diff {
+  border: 2px solid green;
+}
+/* -----------------------------------------------------Difficulty-------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------Abilities-------------------------------------------------------- */
+
+.abilC {
+  display: flex;
+  border: 5px solid black;
+  justify-content: right;
+  width: 25%;
+  margin-left: 50vw;
+  position: sticky;
+  bottom: 40vh;
+}
+
+.abilTitleC {
+  border: 2px solid black;
+  
+}
+.abilTitle {
+  border: 2px solid blue;
+  
+}
+
+.abilNameC {
+  border: 2px solid black;
+
+}
+
+.abil {
+  border: 2px solid red;
+
+}

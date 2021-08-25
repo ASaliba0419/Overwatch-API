@@ -1,5 +1,5 @@
 import axios from "axios"
-import { Link, useHistory, useParams } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import { useState } from "react"
 import { baseURL, config } from '../services'
 import './CharCreate.css'
@@ -13,7 +13,6 @@ const CharCreate = (props) => {
   const [Role, setRole] = useState('')
   const [Img, setImg] = useState('')
 
-  const params = useParams()
   const history = useHistory()
 
 
@@ -27,13 +26,10 @@ const CharCreate = (props) => {
       Img
     }
 
-    if (params.id) {
-      await axios.put(`${baseURL}/${params.id}`, { fields: newChar }, config)
-    } else {
-      await axios.post(baseURL, { fields: newChar }, config)
-    }
+    const resp = await axios.post(baseURL, { fields: newChar }, config)
+
     props.setToggleFetch(prevToggleFetch => !prevToggleFetch)
-    history.push('/CharSelect/')
+    history.push(`/ViewChar/${resp.data.id}`)
 
   }
 
@@ -96,7 +92,6 @@ const CharCreate = (props) => {
             onChange={(e) => setImg(e.target.value)}
           />
         </div>
-
 
         <button id='submitBtn' type='submit'>Submit</button>
 

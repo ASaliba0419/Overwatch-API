@@ -22,3 +22,8 @@ h1 {
   margin: 0 40px;
   transform: scale(1.2)
 }
+
+#selectImg {
+  height: 400px;
+  width: auto;
+}

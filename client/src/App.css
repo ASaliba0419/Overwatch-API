@@ -12,10 +12,13 @@
   
 }
 
-.charSelect {
-  position: relative;
-  left: 35vw;
-  top: 15vh;
+.navHomepage {
+  display: flex;
+  justify-content: space-between;
+  border: solid black 2px;
+  width: 20%;
+
+
 }
 
 .charCreate {
@@ -45,3 +48,12 @@
 }
 
 /* --------------------------------------------------------------------------------------------- */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
