@@ -8,14 +8,17 @@ const CharSelect = (props) => {
 
   return (
     <>
-      <div className="cardContainer">
-      <div>
+      
+      <div className='navSelect'>
+        <Link to="/CharCreate">Create Character</Link>
+        <Link to="/">Home</Link>
+      </div>
+      
+        <div className="charSelectTitle">
         <h2 className='CharSelect1'>Character Selection</h2>
-        <Link className="home" to="/">Home</Link>
-        <Link className="charCreate1" to="/CharCreate">Create Character</Link>
       </div>
 
-    
+      <div className="cardContainer">
       <div className="cards">
         {props.characters.map((character) => (
           <Link to={`/ViewChar/${character.id}`}>
@@ -23,7 +26,8 @@ const CharSelect = (props) => {
           </Link>
           ))}
         </div>
-        </div>
+      </div>
+      
     </>
   )
 }

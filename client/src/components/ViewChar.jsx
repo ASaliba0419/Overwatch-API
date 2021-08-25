@@ -38,9 +38,10 @@ const ViewChar = (props) => {
   return (
     <>
       <div className="wholePage">
-      <div>
-        <Link className="homeViewChar" to="/">Home</Link>
-        <Link className="charSelectViewChar" to='/CharSelect'>Character Selection</Link>
+      
+      <div className='navViewChar'>
+        <Link to='/CharSelect'>All Characters</Link>
+        <Link to="/">Home</Link>
       </div>
 
       <div className="characterContainer">
@@ -65,8 +66,6 @@ const ViewChar = (props) => {
           <div className="imageC">
             <img src={Img} alt={Name} className='img' />
           </div>
-
-         
 
         </div>
       </div>

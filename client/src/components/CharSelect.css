@@ -1,9 +1,14 @@
 
 
-h1 {
-  color: red;
-  font-family: Arial;
+.charSelectTitle {
   text-align: center;
+}
+
+.navSelect {
+  /* border: red solid 2px; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 17vw;
 }
 
 .cards {
@@ -27,3 +32,4 @@ h1 {
   height: 400px;
   width: auto;
 }
+

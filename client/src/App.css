@@ -8,49 +8,16 @@
 .title {
   display: flex;
   justify-content: center;
-  align-self: center;
   text-align: center;
 }
   
-.nav {
-  display: flex;
-  /* border: solid 2px black; */
-}
+
 
 .navHomepage {
+  /* border: red solid 2px; */
   display: flex;
   justify-content: space-between;
-  width: 25%;
-  /* border: solid black 2px; */
-  margin-left: 37vw;
-
-}
-
-
-.charCreate {
-  position: relative;
-  left: 50vw;
-  top: 15vh;
-}
-
-/* --------------------------------------------------------------------------------------------- */
-
-.CharSelect1 {
-  text-align: center;
-  position: relative;
-  top: 6vh;
-}
-
-.charCreate1 {
-  position: relative;
-  left: 15vw;
-  bottom: 6vh;
-}
-
-.home {
- position: relative;
- left: 80vw;
- bottom: 6vh;
+  margin: 25px 40vw;
 }
 
 /* --------------------------------------------------------------------------------------------- */

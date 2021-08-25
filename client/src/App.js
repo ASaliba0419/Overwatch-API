@@ -1,4 +1,5 @@
 import './App.css';
+import './components/Header.css'
 import axios from 'axios'
 import Header from './components/Header'
 import CharSelect from './components/CharSelect'
@@ -8,7 +9,6 @@ import { Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { baseURL, config } from './services'
 import Footer from './components/Footer'
-import './components/Header.css'
 
 
 
@@ -38,27 +38,25 @@ function App() {
         <Header />
       </div>
 
-      <div>
 
-        <Route path="/" exact>
           <div className='charContainer'>
+        <Route path="/" exact>
 
-          </div>
 
 
           <div className="title">
           <h2 >Get a view of all the characters, or <br /> create your own!</h2>
           </div>
 
-          <div className='nav'>
+
           <div className='navHomepage'>
           <Link  to='/CharSelect'>All Characters</Link>
             <Link to="/CharCreate">Create Character</Link>
             </div>
-            </div>
 
         </Route>
 
+          </div>
         <Route path="/CharSelect">
           <CharSelect characters={characters} />
         </Route>
@@ -70,7 +68,6 @@ function App() {
         <Route path='/ViewChar/:id'>
           <ViewChar characters={characters} setToggleFetch={setToggleFetch} />
         </Route>
-      </div>
 
       <div className='footer'>
         <Footer />

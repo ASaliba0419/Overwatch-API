@@ -1,15 +1,8 @@
-.homeViewChar {
+.navViewChar {
+  /* border: red solid 2px; */
   display: flex;
-  position: absolute;
-  left: 81vw;
-  top: 23vh;
-}
-
-.charSelectViewChar {
-  display: flex;
-  position: absolute;
-  left: 16.5vw;
-  top: 23vh;
+  justify-content: space-between;
+  margin: 0px 17vw;
 }
 
 

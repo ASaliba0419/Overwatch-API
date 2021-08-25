@@ -35,11 +35,11 @@ const CharCreate = (props) => {
 
   return (
     <>
-      <div>
-        <Link className="home" to="/">Home</Link>
+      <div className='navCharCreate'>
         <Link className="" to="/CharSelect">All Characters</Link>
-        <h2 className='CharCreate1'>Create your Character</h2>
+        <Link className="home" to="/">Home</Link>
       </div>
+        <h2 className='CharCreate1'>Create your Character</h2>
 
 
       <form onSubmit={handleSubmit}>
