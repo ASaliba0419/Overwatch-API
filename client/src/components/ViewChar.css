@@ -4,6 +4,19 @@
   margin: 0px 17vw;
 }
 
+.navHomePage {
+  display: flex;
+  justify-content: space-between;
+  margin: 15vh 40vw;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5vh;
+}
+
 
 .characterContainer {
   display: flex;
@@ -123,7 +136,7 @@
     text-align: center;
     position: relative;
     top: 5vh;
-    left: 19.5vw;
+    left: 39vw;
     /* border: 2px solid red; */
   }
   

@@ -15,11 +15,13 @@ const ViewChar = (props) => {
   if (!thisChar) {
     return (
       <>
-        <div>
-          <Link className="home" to="/">Home</Link>
-          <Link className="charSelect1" to='/CharSelect'>Character Selection</Link>
+        <div className='navHomePage'>
+          <Link to="/">Home</Link>
+          <Link to='/CharSelect'>Character Selection</Link>
         </div>
-        <p>Invalid ID</p>
+        <div className="title">
+          <p>Invalid ID</p>
+          </div>
       </>
     )
   }
