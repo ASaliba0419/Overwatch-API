@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css'
+import GitHub from '../components/img/GitHub.png'
+
 
 const Footer = () => {
 
@@ -7,7 +9,8 @@ const Footer = () => {
     <>
 
     <div className="footer">
-      <h6>Andrew Saliba</h6>
+        <h5>Andrew Saliba </h5>
+        <a href="https://github.com/ASaliba0419" target='_blank'><img src={GitHub} alt="Git Hub"/></a>
         </div>
 
         </>
