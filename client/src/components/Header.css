@@ -3,14 +3,17 @@
   justify-content: center;
 }
 
+#headerImg {
+  height: 200px;
+}
 
-@media only screen and (max-width: 400px) {
+@media all and (max-width: 400px) {
   .headerContainer {
     display: flex;
     justify-content: center;
   }
 
-  img {
+  #headerImg {
     height: 55px;
   }
 }

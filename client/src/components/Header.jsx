@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <div className="headerContainer">
     <header className='headerTitle'>
-      <img src={logo} alt='Overwatch'/>
+      <img id='headerImg' src={logo} alt='Overwatch'/>
     </header>
     </div>
     </>

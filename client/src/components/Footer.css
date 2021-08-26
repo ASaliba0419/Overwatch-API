@@ -3,13 +3,13 @@
   justify-content: center;
   align-items: center;
   /* border: solid black 2px; */
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 99%;
 }
 
 
-@media only screen and (max-width: 400px) {
+@media all and (max-width: 400px) {
   .footer {
     display: flex;
     justify-content: center;
