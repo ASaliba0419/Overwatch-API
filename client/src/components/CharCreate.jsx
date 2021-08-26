@@ -49,7 +49,7 @@ const CharCreate = (props) => {
       <br />
 
       <div className="formC">
-      <form onSubmit={handleSubmit} className='formPge'>
+      <form onSubmit={handleSubmit}>
         <div className='name'>
           <input
             type="text"
@@ -62,7 +62,7 @@ const CharCreate = (props) => {
           
 
           <div className='diffRole'>
-          <select onChange={(e) => setRole(e.target.value)}>
+          <select id='selectRoleSel' onChange={(e) => setRole(e.target.value)}>
             <option value="" disabled selected hidden>Choose a role</option>
             <option value='Tank'>Tank</option>
             <option value='Support'>Support</option>
@@ -82,7 +82,7 @@ const CharCreate = (props) => {
 
 
           <div className="questionGuy">
-            <img src={questionGuy} alt="" height="250px" width="250px" />
+            <img id='questionGuyImg' src={questionGuy} alt=""/>
           </div>
 
         <div className="userCreatedPic">
