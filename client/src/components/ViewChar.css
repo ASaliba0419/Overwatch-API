@@ -31,9 +31,6 @@
   /* border: 2px solid red; */
 }
 
-.name {
-  /* border: 2px solid red; */
-}
 /* ----------------------------------------------Image------------------------------------------------------------- */
 .imageC {
   /* border: 2px solid black; */
@@ -54,32 +51,11 @@
   justify-content: space-between;
 }
 
-.roleTitle{
-  
-  /* border: 2px solid green; */
-}
-
-.role {
-
-  /* border: 2px solid lightgreen; */
-}
 .roleNameC {
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
 }
-
-.diffTitle {
-  /* border: 2px solid green; */
-
-}
-
-.diff {
-  /* border: 2px solid green; */
-}
-
-
-
 
 /* -----------------------------------------------------Abilities-------------------------------------------------------- */
 
@@ -95,24 +71,12 @@
   flex-direction: column;
 }
 
-.abilTitleC {
-  /* border: 2px solid black; */
-  
-}
-.abilTitle {
-  /* border: 2px solid blue; */
-  
-}
 
 .abilNameC {
   border: 2px solid black;
 
 }
 
-.abil {
-  /* border: 2px solid red; */
-
-}
 
 .delbtn {
   display: flex;
@@ -122,4 +86,114 @@
   margin-left: 57vw;
   position: relative;
   bottom: 50vh;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .navViewChar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 17vw;
+  }
+  
+  
+  .characterContainer {
+    display: flex;
+    padding-left: 15vw;
+    /* border: 5px solid black; */
+    padding: 0vh 48.6vw;
+  }
+  
+  .characterItems {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* border: 5px solid black; */
+    width: 25%;
+    height: auto;
+  }
+  
+  
+  
+  /* -------------------------------------------------Name------------------------------------------------------------- */
+  .nameC {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 15vh;
+    left: 35vw;
+    /* border: 2px solid red; */
+  }
+  
+  /* ----------------------------------------------Image------------------------------------------------------------- */
+  .imageC {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 25vh;
+    right: 20vw;
+  }
+  
+  .img {
+    /* border: 2px solid black; */
+    height: 250px;
+    width: 300px;
+  }
+  /* ------------------------------------------------Role------------------------------------------------------------ */
+  
+  .roleC {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 15vh;
+    left: 16vh;
+  }
+  
+  .roleNameC {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 3vh;
+    left: 16vh;
+  }
+  
+  /* -----------------------------------------------------Abilities-------------------------------------------------------- */
+  
+  .abilC {
+    display: flex;
+    /* border: 5px solid black; */
+    inline-size: 300px;
+    position: relative;
+    bottom: 24vh;
+    right: 55vw;
+    padding: 0vh 5vw 0vh 0vh;
+  }
+  
+  
+  .delbtn {
+    display: flex;
+    /* border: 5px solid black; */
+    justify-content: right;
+    width: auto;
+    margin-left: 76vw;
+    position: relative;
+    bottom: 12vh;
+  }
+
+  .navViewChar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 8vw;
+    position: relative;
+    top: 75vh;
+  }
+  
+
+
 }

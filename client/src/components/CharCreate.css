@@ -62,10 +62,85 @@
 
 .subBtn {
   display: flex;
-  /* border: 5px solid black; */
   justify-content: right;
   width: auto;
-  margin-left: 55vw;
+  margin-left: 25vw;
   position: relative;
-  bottom: 33vh;
+  bottom: 27vh;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 400px) {
+
+  .userCreatedPic {
+    max-width: 300px;
+    max-height: 300px
+  }
+  
+  .navCharCreate {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 17vw;
+  }
+  
+  .formC {
+    display: flex;
+    padding-left: 30vw;
+    /* border: 5px solid black; */
+    flex-direction: column;
+    margin-right: 50vw;
+  }
+  
+  .name {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+  }
+  
+  
+  
+  .diffRole {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-right: 1vw;
+  }
+  
+  
+  .userCreatedPic {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-left: 6.3vw;
+  }
+  
+  .questionGuy {
+    margin-left: 3.4vw;
+  }
+  
+  #difficulty {
+    width: 18%;
+  }
+  
+  .abilContainer {
+    border: 2px solid gray;
+    display: flex;
+    margin-left: 55vw; 
+    margin-right: 30vw;
+    padding: 10px;
+    position: relative;
+    bottom: 35vh;
+  }
+  
+  
+  
+  .subBtn {
+    display: flex;
+    justify-content: right;
+    width: auto;
+    margin-left: 25vw;
+    position: relative;
+    bottom: 27vh;
+  }
+
 }

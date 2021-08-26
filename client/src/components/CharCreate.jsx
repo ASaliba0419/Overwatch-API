@@ -62,7 +62,6 @@ const CharCreate = (props) => {
           
 
           <div className='diffRole'>
-            {/* <h4>Role</h4> */}
           <select onChange={(e) => setRole(e.target.value)}>
             <option value="" disabled selected hidden>Choose a role</option>
             <option value='Tank'>Tank</option>
@@ -94,7 +93,9 @@ const CharCreate = (props) => {
             onChange={(e) => setImg(e.target.value)}
           />
         </div>
-
+        <div className='subBtn'>
+        <button id='submitBtn' type='submit'>Create</button>
+        </div>
 
       </form>
       </div>
@@ -111,9 +112,6 @@ const CharCreate = (props) => {
           />
         </div>
       </div>
-      <div className='subBtn'>
-        <button id='submitBtn' type='submit'>Submit</button>
-        </div>
     </>
   )
 }
