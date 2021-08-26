@@ -37,7 +37,6 @@ const ViewChar = (props) => {
 
   return (
     <>
-      <div className="wholePage">
       
       <div className='navViewChar'>
         <Link to='/CharSelect'>All Characters</Link>
@@ -88,7 +87,6 @@ const ViewChar = (props) => {
         }
       </div>
 
-      </div>
 
     </>
 

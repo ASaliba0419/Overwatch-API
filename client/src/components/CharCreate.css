@@ -12,7 +12,7 @@
 .formC {
   display: flex;
   padding-left: 30vw;
-  border: 5px solid black;
+  /* border: 5px solid black; */
   flex-direction: column;
   margin-right: 50vw;
 }
@@ -32,19 +32,41 @@
   margin-right: 1vw;
 }
 
+
 .userCreatedPic {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
-  margin-left: 5.7vw;
+  margin-left: 6.3vw;
   margin-top: 10vh;
+}
+
+.questionGuy {
+  margin-left: 3.4vw;
 }
 
 #difficulty {
   width: 18%;
 }
 
+.abilContainer {
+  border: 2px solid gray;
+  display: flex;
+  margin-left: 55vw; 
+  margin-right: 30vw;
+  padding: 10px;
+  position: relative;
+  bottom: 35vh;
+}
 
-.abilContent {
-  
+
+
+.subBtn {
+  display: flex;
+  /* border: 5px solid black; */
+  justify-content: right;
+  width: auto;
+  margin-left: 55vw;
+  position: relative;
+  bottom: 33vh;
 }

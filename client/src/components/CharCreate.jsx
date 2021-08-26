@@ -3,6 +3,8 @@ import { Link, useHistory } from "react-router-dom"
 import { useState } from "react"
 import { baseURL, config } from '../services'
 import './CharCreate.css'
+import questionGuy from '../components/img/questionGuy.png'
+
 
 
 const CharCreate = (props) => {
@@ -39,7 +41,12 @@ const CharCreate = (props) => {
         <Link className="" to="/CharSelect">All Characters</Link>
         <Link className="home" to="/">Home</Link>
       </div>
-        <h2 className='CharCreate1'>Create your Character</h2>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
       <div className="formC">
       <form onSubmit={handleSubmit} className='formPge'>
@@ -52,8 +59,10 @@ const CharCreate = (props) => {
           />
         </div>
 
+          
 
-        <div className='diffRole'>
+          <div className='diffRole'>
+            {/* <h4>Role</h4> */}
           <select onChange={(e) => setRole(e.target.value)}>
             <option value="" disabled selected hidden>Choose a role</option>
             <option value='Tank'>Tank</option>
@@ -73,6 +82,10 @@ const CharCreate = (props) => {
         </div>
 
 
+          <div className="questionGuy">
+            <img src={questionGuy} alt="" height="250px" width="250px" />
+          </div>
+
         <div className="userCreatedPic">
           <input
             type='url'
@@ -85,6 +98,9 @@ const CharCreate = (props) => {
 
       </form>
       </div>
+
+
+      <div className="abilContainer">
       <div className='abilContent'>
           <input
             id="abilities"
@@ -93,6 +109,9 @@ const CharCreate = (props) => {
             placeholder='Add Abilities'
             onChange={(e) => setAbilities(e.target.value)}
           />
+        </div>
+      </div>
+      <div className='subBtn'>
         <button id='submitBtn' type='submit'>Submit</button>
         </div>
     </>
