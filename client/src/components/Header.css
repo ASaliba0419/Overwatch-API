@@ -2,3 +2,15 @@
   display: flex;
   justify-content: center;
 }
+
+
+@media only screen and (max-width: 400px) {
+  .headerContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    height: 55px;
+  }
+}

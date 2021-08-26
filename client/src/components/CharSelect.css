@@ -31,3 +31,39 @@
   width: auto;
 }
 
+
+@media only screen and (max-width: 400px) {
+
+  .cards {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+  }
+  
+  .card {
+    padding: 0 2px;
+    transition: 250ms all;
+  }
+  
+  .card:hover {
+    margin: 0 40px;
+    transform: scale(1.2)
+  }
+  
+  #selectImg {
+    height: 450px;
+    width: auto;
+  }
+  
+  .navSelect {
+    /* border: red solid 2px; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0vh 4vw;
+    position: relative;
+    top: 70vh;
+  }
+
+}
+
