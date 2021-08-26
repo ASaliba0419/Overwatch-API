@@ -1,5 +1,4 @@
 .navViewChar {
-  /* border: red solid 2px; */
   display: flex;
   justify-content: space-between;
   margin: 0px 17vw;
@@ -9,16 +8,16 @@
 .characterContainer {
   display: flex;
   padding-left: 30vw;
-  border: 5px solid black;
-
-  
+  /* border: 5px solid black; */
+  flex-direction: column;
+  margin-right: 50vw;
 }
 
 .characterItems {
   display: flex;
   justify-content: center;
   align-content: center;
-  border: 5px solid black;
+  /* border: 5px solid black; */
   width: 50%;
   height: auto;
 }
@@ -29,55 +28,54 @@
 .nameC {
   display: flex;
   justify-content: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .name {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 /* ----------------------------------------------Image------------------------------------------------------------- */
 .imageC {
-  border: 2px solid black;
-  width: 1;
+  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
 }
 
 .img {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 400px;
   width: auto;
 }
 /* ------------------------------------------------Role------------------------------------------------------------ */
 
 .roleC {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   justify-content: space-between;
 }
 
 .roleTitle{
   
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .role {
 
-  border: 2px solid lightgreen;
+  /* border: 2px solid lightgreen; */
 }
 .roleNameC {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
 }
 
 .diffTitle {
-  border: 2px solid green;
+  /* border: 2px solid green; */
 
 }
 
 .diff {
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 /* -----------------------------------------------------Difficulty-------------------------------------------------------- */
 
@@ -88,20 +86,22 @@
 
 .abilC {
   display: flex;
-  border: 5px solid black;
+  /* border: 5px solid black; */
   justify-content: right;
   width: 25%;
-  margin-left: 50vw;
-  position: sticky;
-  bottom: 40vh;
+  margin-left: 55vw;
+  inline-size: 250px;
+  position: relative;
+  bottom: 50vh;
+  flex-direction: column;
 }
 
 .abilTitleC {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   
 }
 .abilTitle {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   
 }
 
@@ -111,6 +111,16 @@
 }
 
 .abil {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 
+}
+
+.delbtn {
+  display: flex;
+  /* border: 5px solid black; */
+  justify-content: right;
+  width: auto;
+  margin-left: 57vw;
+  position: relative;
+  bottom: 50vh;
 }

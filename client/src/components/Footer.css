@@ -1,6 +1,9 @@
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   /* border: solid black 2px; */
-  margin: 52vh 26vw 0vh 26vw;
+  position: absolute;
+  bottom: 1vh;
+  margin-left: 28vw;
 }

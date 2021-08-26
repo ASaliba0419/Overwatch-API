@@ -6,7 +6,7 @@
   /* border: red solid 2px; */
   display: flex;
   justify-content: space-between;
-  margin: 0px 17vw;
+  margin: 0vh 17vw;
 }
 
 .cards {
@@ -27,7 +27,7 @@
 }
 
 #selectImg {
-  height: 400px;
+  height: 350px;
   width: auto;
 }
 

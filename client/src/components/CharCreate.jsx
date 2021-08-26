@@ -41,11 +41,10 @@ const CharCreate = (props) => {
       </div>
         <h2 className='CharCreate1'>Create your Character</h2>
 
-
-      <form onSubmit={handleSubmit}>
-        <div>
+      <div className="formC">
+      <form onSubmit={handleSubmit} className='formPge'>
+        <div className='name'>
           <input
-            id="name"
             type="text"
             value={Name}
             placeholder='Name'
@@ -53,16 +52,15 @@ const CharCreate = (props) => {
           />
         </div>
 
-        <div>
-          <select id="role" onChange={(e) => setRole(e.target.value)}>
+
+        <div className='diffRole'>
+          <select onChange={(e) => setRole(e.target.value)}>
             <option value="" disabled selected hidden>Choose a role</option>
             <option value='Tank'>Tank</option>
             <option value='Support'>Support</option>
             <option value='Damage'>Damage</option>
           </select>
-        </div>
 
-        <div>
           <input
             id="difficulty"
             type='number'
@@ -71,18 +69,9 @@ const CharCreate = (props) => {
             min="1"
             placeholder='Difficulty'
             onChange={(e) => setDifficulty(e.target.valueAsNumber)}
-          />
+            />
         </div>
 
-        <div>
-          <input
-            id="abilities"
-            type='text'
-            value={Abilities}
-            placeholder='Add Abilities'
-            onChange={(e) => setAbilities(e.target.value)}
-          />
-        </div>
 
         <div className="userCreatedPic">
           <input
@@ -93,10 +82,19 @@ const CharCreate = (props) => {
           />
         </div>
 
-        <button id='submitBtn' type='submit'>Submit</button>
 
       </form>
-
+      </div>
+      <div className='abilContent'>
+          <input
+            id="abilities"
+            type='text'
+            value={Abilities}
+            placeholder='Add Abilities'
+            onChange={(e) => setAbilities(e.target.value)}
+          />
+        <button id='submitBtn' type='submit'>Submit</button>
+        </div>
     </>
   )
 }

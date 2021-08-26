@@ -8,3 +8,43 @@
   justify-content: space-between;
   margin: 0px 17vw;
 }
+
+.formC {
+  display: flex;
+  padding-left: 30vw;
+  border: 5px solid black;
+  flex-direction: column;
+  margin-right: 50vw;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+
+
+.diffRole {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+  margin-right: 1vw;
+}
+
+.userCreatedPic {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  margin-left: 5.7vw;
+  margin-top: 10vh;
+}
+
+#difficulty {
+  width: 18%;
+}
+
+
+.abilContent {
+  
+}

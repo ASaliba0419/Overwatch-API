@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-
+    <div className='flex-wrapper'>
 
       <div>
         <Header />
@@ -71,7 +71,9 @@ function App() {
 
       <div>
         <Footer />
-      </div>
+        </div>
+
+        </div>
     </>
   );
 }
