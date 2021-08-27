@@ -11,7 +11,7 @@
 }
 
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 500px) {
   .footer {
     display: flex;
     justify-content: center;

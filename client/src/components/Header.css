@@ -7,7 +7,7 @@
   height: 200px;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 500px) {
   .headerContainer {
     display: flex;
     justify-content: center;
