@@ -2,6 +2,7 @@
   display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     /* border: solid black 2px; */
     position: absolute;
     bottom: 0;
@@ -10,6 +11,13 @@
     flex-wrap: wrap;
 }
 
+.footer2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 @media all and (max-width: 500px) {
   .footer {
@@ -22,6 +30,14 @@
     margin: 0vh;
     width: 99%;
     flex-wrap: wrap;
+  }
+
+  .footer2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
 }
