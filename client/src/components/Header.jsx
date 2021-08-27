@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <div className="headerContainer">
     <header className='headerTitle'>
-      <img id='headerImg' src={logo} alt='Overwatch'/>
+      <a href="https://playoverwatch.com/en-us/" target="_blank"><img id='headerImg' src={logo} alt='Overwatch'/></a>
     </header>
     </div>
     </>
