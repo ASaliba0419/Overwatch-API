@@ -67,9 +67,11 @@ function App() {
           <ViewChar characters={characters} setToggleFetch={setToggleFetch} />
         </Route>
 
+        <>
       <div>
         <Footer />
         </div>
+        </>
 
     </>
   );
