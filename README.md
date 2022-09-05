@@ -62,11 +62,11 @@ createdTime: "2021-08-20T01:15:04.000Z"
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
 | August 19/20 | Proposal Approval / Airtable Setup         | Complete |
-| August 23   | Return Data from API      | Incomplete |
-| August 24   | Cont'd React/ MVP          | Incomplete |
-| August 25   | CSS/ Post MVP                | Incomplete |
-| August 26   | Post MVP/ CSS cont'd     | Incomplete |
-| August 27  | Presentations                  | Incomplete |
+| August 23   | Return Data from API      | Complete |
+| August 24   | Cont'd React/ MVP          | Complete |
+| August 25   | CSS/ Post MVP                | Complete |
+| August 26   | Post MVP/ CSS cont'd     | Complete |
+| August 27  | Presentations                  | Complete |
 
 
 
